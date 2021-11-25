@@ -29,10 +29,8 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v2
 
-      - name: 'Install dotnet'
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '4.6.1'
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.1
           
-      - name: 'Build project'
-        run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
+      - name: Build app for release
+        run: msbuild ${{ env.PROJECT_PATH }} -t:rebuild -verbosity:diag -property:Configuration=Release
