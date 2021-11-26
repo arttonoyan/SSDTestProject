@@ -6,9 +6,9 @@ name: Build
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, rc_** ]
+    branches: [ '*' ]
   pull_request:
-    branches: [ main, rc_** ]
+    branches: [ '*' ]
     
   workflow_dispatch:
     inputs:
