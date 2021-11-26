@@ -31,6 +31,8 @@ jobs:
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
+        with:
+          msbuild-architecture: x86
           
       - name: Build app for release
         run: msbuild ${{ env.PROJECT_PATH }} -t:rebuild -verbosity:diag -property:Configuration=Release
