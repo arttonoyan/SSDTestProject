@@ -68,6 +68,7 @@
     <Build Include="dbo\Tables\Student.sql" />
     <None Include="Scripts\PostDeployment\3-TestScript.sql" />
     <Build Include="Scripts\PostDeployment\4-TestScript.sql" />
+    <Build Include="Scripts\PostDeployment\5-TestScript.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\PostDeployment\1-TestScript.sql" />
