@@ -69,5 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\PostDeployment\1-TestScript.sql" />
+    <None Include="Scripts\PostDeployment\2-TestScript.sql" />
   </ItemGroup>
 </Project>
