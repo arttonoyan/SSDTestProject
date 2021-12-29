@@ -32,4 +32,4 @@ jobs:
           msbuild-architecture: x86
           
       - name: Build app for release
-        run: msbuild ${{ env.PROJECT_PATH }} -t:rebuild -verbosity:diag -property:Configuration=Release
+        run: msbuild ${{ env.PROJECT_PATH }} -t:rebuild -t:restore -verbosity:diag -property:Configuration=Release
