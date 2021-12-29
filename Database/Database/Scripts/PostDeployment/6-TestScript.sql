@@ -1,1 +1,1 @@
-Select * 10;
+Select 10;
